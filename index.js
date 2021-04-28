@@ -148,14 +148,14 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, string){
-    const copiedArr = [];
+    const copiedArr = [...originalFlavors];
     for(let i = 0; i < arr.length; i++){
         if(arr[i].includes(string)){
             copiedArr.splice(arr[i, 1]);
         }
-    }
-    return copiedArr;
 }
+
+
 
 
 
